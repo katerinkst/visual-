@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url("E:/katerinkst/imagenes/misha2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  /*aca configuro como se veria en computadora*/
+  .barras{ display: none;}
+  .desplagable{background: #5a07e9;}
+  ul{display: flex;
+    flex-direction: row;
+  }
+  ul li a{color: cyan;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  nav ul li:hover{background: #2b06ce;}
+  /*aca configuro como se veria en tablet*/
+  @media (max-width:850px){
+  
+  .barras{
+    background-color: #f10c51;
+    display: block;
+  }
+  .desplagable{
+    background: none;
+    transform: translate(-100%);
+    transition: 0.5s;
+    font-size: 1.5rem;
+    width: 50%;
+    u1{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+  a{
+  padding: 0;
+  }
+  a{
+    font-size: 1.5rem;
+    padding: 20px 0px 20px 20px;
+    display: block;
+    text-align: left;
+  }
+  .boton_meno{
+    background-image: url("");
+    background-color: #f00a94;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+  }
+  .botton{
+    margin: 5px;
+    border: none;
+    margin: 10px 10px 10px 20px;
+  }
+  /*con esta clase abro y cierro el menu con toggle*/
+  .abrir_menu{
+    background: rgba(237, 8, 92, 0.6);
+    backdrop-filter: blur(2px);
+    transform: translate(0%);
+    width: 50%;
+    transition: 0.5s;
+  }
+  /* con esta clase cambop las barras por una x*/
+  .colocar_x{
+    background-image: url('./icono_x.png');
+    background-color: #e50a20;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+  }
+  
+  }
+  /*aca configuro como se veria en celular*/
+  @media(max-width: 500px){
+    .desplagable{
+        width: 100px;
+        height: 100vh;
+        font-size: 1.6rem;
+       }
+    }
+  }
+  h2{
+    color: #f60cbf;
+  }
+  h1{
+    color: rgb(171, 7, 122);
+  }
