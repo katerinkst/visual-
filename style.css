@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body{
-    background-image: url('imagenes/131e4259dc4602e0515b00d4a83c4af1.jpg');
+    background-image: url("imagenes/131e4259dc4602e0515b00d4a83c4af1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
